@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.home.CrearUsuario">
+   <children>
+      <Label layoutX="208.0" layoutY="28.0" text="CREACION DE USUARIO">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="132.0" text="Ingrese el Nombre">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField layoutX="425.0" layoutY="130.0" />
+      <Label layoutX="224.0" layoutY="168.0" text="Ingrese el Apellido">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="425.0" layoutY="165.0" />
+      <Label layoutX="223.0" layoutY="203.0" text="Ingrese contraseña">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="425.0" layoutY="200.0" />
+      <Label layoutX="223.0" layoutY="240.0" text="Ingrese Medio de Pago">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="425.0" layoutY="238.0" prefWidth="150.0" />
+      <Label layoutX="223.0" layoutY="277.0" text="Ingrese No. de Tarjeta">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="314.0" text="Ingrese Clave Tarjeta">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="425.0" layoutY="275.0" text="Opcional" />
+      <TextField layoutX="426.0" layoutY="312.0" text="Opcional" />
+      <Label layoutX="224.0" layoutY="351.0" text="Ingrese No. Telefono">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="388.0" text="Ingrese Correo">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="426.0" layoutY="349.0" />
+      <TextField layoutX="425.0" layoutY="386.0" />
+      <Button layoutX="374.0" layoutY="440.0" mnemonicParsing="false" text="Crear" />
+      <Button fx:id="btnRegresarCliente" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onMouseClicked="#cambiarCrearUsuario" text="←" />
+   </children>
+</AnchorPane>

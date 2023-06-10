@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.home.Administrador">
+   <children>
+      <Label layoutX="287.0" layoutY="28.0" text="Administrador">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMenu" layoutX="22.0" layoutY="36.0" mnemonicParsing="false" onMouseClicked="#cambiarAdministrador" text="←" />
+      <Label layoutX="350.0" layoutY="94.0" text="Lista de Eventos" />
+      <Button fx:id="btnEvento" layoutX="82.0" layoutY="448.0" mnemonicParsing="false" onMouseClicked="#cambiarEvento" text="Registrar Nuevo Evento" />
+      <TableView fx:id="tablaEventos" fixedCellSize="-5.0" layoutX="82.0" layoutY="119.0" prefHeight="303.0" prefWidth="641.0">
+        <columns>
+          <TableColumn prefWidth="106.0" text="Evento" />
+          <TableColumn prefWidth="108.0" text="Fecha" />
+            <TableColumn prefWidth="107.0" text="Hora Inicio" />
+            <TableColumn prefWidth="104.0" text="Hora Final" />
+            <TableColumn prefWidth="107.0" text="Precio Evento" />
+            <TableColumn prefWidth="108.0" text="Sección" />
+        </columns>
+      </TableView>
+      <Button layoutX="625.0" layoutY="448.0" mnemonicParsing="false" text="Eliminar Evento" />
+   </children>
+</AnchorPane>
